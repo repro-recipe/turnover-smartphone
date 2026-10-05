@@ -1,0 +1,18 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- White Circle Card in Center -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,28 A26,26 0 1,1 53.9,28 Z" />
+    <!-- Turnover Curved Arrow in Primary Blue -->
+    <path
+        android:fillColor="#005BAB"
+        android:pathData="M54,34 C42.95,34 34,42.95 34,54 C34,65.05 42.95,74 54,74 C62.3,74 69.4,68.9 72.4,61.6 L66.6,59.3 C64.6,64.2 59.7,67.6 54,67.6 C46.5,67.6 40.4,61.5 40.4,54 C40.4,46.5 46.5,40.4 54,40.4 C57.8,40.4 61.2,42 63.6,44.5 L56.4,51.6 L76,51.6 L76,32 L68.8,39.2 C65,35.4 59.8,34 54,34 Z" />
+    <!-- Central Improvement Sparkle / Check -->
+    <path
+        android:fillColor="#007934"
+        android:pathData="M50,53 L46.5,49.5 L44.4,51.6 L50,57.2 L60.6,46.6 L58.5,44.5 Z" />
+</vector>

@@ -1,11 +1,36 @@
-<div align="center">
+# TurnOver (Android) - 失敗を明日の行動に変える学習改善ノート
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+TurnOver は、「勉強時間」ではなく「以前できなかった失敗やつまずきを克服すること」に最も高い報酬を与える、中高生から社会人まで使える Android 向け学習改善ノートアプリです。
 
-  <h1>Built with AI Studio</h2>
+## 主な機能
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+- **今日の学習・改善アクション管理**:
+  - つまずきから生まれた改善アクションタスク（+1pt獲得）と通常タスクの管理
+  - 所要時間の目安（分）と優先度・教科カテゴリー管理
+  - 夜のふりかえりに引き継がれる「ひとことメモ」記録
+- **毎日の学習習慣（デイリータスク）**:
+  - 3日以上連続達成で毎日 +0.5pt 獲得
+  - 定番プリセット（英単語暗記、音読、計算ドリル、翌日計画）
+- **ストリーク・改善ポイント（ゲーミフィケーション）**:
+  - 毎日の学習継続日数（ストリーク）と過去最高記録
+  - 1週間の達成状況がひと目でわかるウィークリーインジケーター
+  - 改善ポイントの累計獲得表示
+- **夜のふりかえりノート（AI 4ステップウィザード）**:
+  - ① **振り返り**: 今日の成果やつまずき、明日の予定を自由記述
+  - ② **分析**: AIがつまずき（根本原因含む）と成果、明日の予定を構造化抽出
+  - ③ **計画**: 失敗を克服するためのスモールステップ改善アクションを提示・選択
+  - ④ **確認**: 明朝すぐできるタスクリストを確定し、ストリークを更新して翌日へ
+- **できるようになったこと（克服ノート・アーカイブ）**:
+  - つまずき・ミスの根本原因と対策の記録
+  - 克服達成時にコツを記録して +1pt 獲得
+- **データ保存・インポート（バックアップ）**:
+  - すべてのデータを JSON 文字列で書き出し・復元可能
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+## 技術スタック
 
-</div>
+- **プラットフォーム**: Android (Kotlin, Jetpack Compose)
+- **アーキテクチャ**: MVVM (Model-View-ViewModel) + Repository Pattern
+- **ローカルデータベース**: Room Database (SQLite, Coroutines, Flow)
+- **UIデザイン**: Material Design 3 (デジタル庁 デザインシステム DADS / Clean Public Service スタイル準拠)
+- **AI連携**: Google Gemini API (`gemini-2.5-flash` / `gemini-3.8-flash`) + オフライン時ヒューリスティック分析エンジン
+- **ビルドツール**: Gradle (Kotlin DSL, Version Catalog)
